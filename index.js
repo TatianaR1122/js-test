@@ -190,13 +190,90 @@
 // console.log(getUsersByAge(users, 25, 50));
 
 
-const getUsersByAge = (users, min, max) => {
-    return users.reduce((acc, user) => {
-        if(user.age >= min && user.age < max) {
-        acc.push(user)
-    }
-    return acc;
-}, []);
-}
-const getUsersByAgeFilter = (users, min, max) => users.filter(({ age }) => age >= min && age < max);
-console.log(getUsersByAgeFilter(users, 25, 50));
+// const getUsersByAge = (users, min, max) => {
+//     return users.reduce((acc, user) => {
+//         if(user.age >= min && user.age < max) {
+//         acc.push(user)
+//     }
+//     return acc;
+// }, []);
+// }
+// const getUsersByAgeFilter = (users, min, max) => users.filter(({ age }) => age >= min && age < max);
+// console.log(getUsersByAgeFilter(users, 25, 50));
+
+
+//задача 1 
+
+// const alertBtn = document.querySelector("#alert-btn");
+// const output = document.querySelector('.output');
+// const alertInput = document.querySelector('.alert-input');
+
+// console.dir(output);
+
+// const onAlertBtnClick = () =>{
+//     const inputValue = alertInput.value;
+//     output.textContent = inputValue;
+// }
+// alertBtn.addEventListener('click', onAlertBtnClick);
+
+
+// Після натискання кнопки "SWAP ME" здійснюється обмін вмістом між двома інпутами.
+// Ви можете натиснути на неї кілька разів або вручну змінити вміст інпутів.
+// */
+
+
+
+// const refs = {
+//     backdrop: document.querySelector(".backdrop"),
+//     openModalBtn: document.querySelector(".open-modal-btn"),
+//     closeModalBtn: document.querySelector(".close-modal-btn"),
+//   };
+  
+//   refs.openModalBtn.addEventListener("click", onOpenModalBtnClick);
+//   refs.closeModalBtn.addEventListener("click", onCloseModalBtnClick);
+//   refs.backdrop.addEventListener("click", onBackdropClick);
+
+//   function onOpenModalBtnClick() {
+//     openModal();
+//   }
+
+//   function onCloseModalBtnClick() {
+//     closeModal();
+//   }
+  
+//   function openModal() {
+//     refs.backdrop.classList.remove("is-hidden");
+//     document.addEventListener("keydown", onEscPress);
+    
+// }
+
+//   function closeModal(){
+//     refs.backdrop.classList.add(".is-hidden"); 
+//     document.addEventListener("keydown", onEscPress);
+//   }
+
+// function onEscPress(event){
+// console.log(event.code);
+// console.log(event.key);
+
+// if(event.code === `Escape`) {
+//     closeModal();
+// }
+// }
+
+// function onBackdropClick() {
+//     closeModal();
+// }
+
+
+// function Person(firstName, lastName) {
+//   this.firstName = firstName;
+//   this.lastName = lastName;
+// }
+
+// const member = new Person('Lidia', 'Hallie');
+// Person.getFullName = function () {
+//   return `${this.firstName} ${this.lastName}`;
+// }
+
+// console.log(member.getFullName());
